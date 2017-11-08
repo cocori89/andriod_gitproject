@@ -5,9 +5,17 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class NewActivity extends AppCompatActivity {
+    /*전역 변수*/
+    /*텍스트를 가져 오는 객체*/
+    /*자동으로 EditText를 찾아서 연결해주는 역할을 하는 듯 보임 */
+    EditText editText;
+    EditText editText2;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,49 +25,24 @@ public class NewActivity extends AppCompatActivity {
     }
 
     /*activity_main.xml에서 버튼을 클릭하게 되면 호출되는 함수 */
-    void onButtonClicked(View v) {
-        /*화면에 출력할 메시지*/
-        String text = "1~100의 합은? ";
-        int sum =0; // 1~100까지의 합
-        /*for문을 사용 하여 1~100까지의 합을 구한다.*/
-        for(int i = 0 ; i<=100;i++){
-            sum += i;
-        }
+    void onButtonShowMessageClicked(View v) {
+        /*xml에서 찾아서 가져와야 한다.*/
+        /*자바 스크립트처럼 Id를 가져 오는 것처럼 가져 오는 것이다. */
+        /*이름을 가져 오는 것이다. */
+        editText = findViewById(R.id.editText);
+        /*나이의 아이디를 찾아서 가져 온다. */
+        editText2 = findViewById(R.id.editText2);
 
-        text = text + sum;
+        /*들어오는 객체가 Object형이기 떄문에 text를 가져 온 추에 String 형으로 변환해준다. */
+        /*이름을 String 형으로 변형한다.*/
+        String name =editText.getText().toString();
+        /*나이를 STring 형으로 변환 해서 이름 뒤에 더해순다. */
+        name =name+editText2.getText().toString();
 
-        /*웹에서 alert창 처럼 문장이 뜨는 역할을 한다. */
-        /*text+sum을 활용 하여 화면에 원하는 값을 출력한다.*/
-        Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
-    }
-
-    /*네이버 접속하기 버튼을 누르면 naver에 접속 할수 있도록하는 메서드*/
-    void onButtonNaverClicked(View v){
-        /*네이버 접속하기 버튼을 누르면  "네이버를 접속합니다라 는 메세지가 뜸"*/
-        Toast.makeText(getApplicationContext(),"네이버에 접속합니다. ",Toast.LENGTH_LONG).show();
-
-        /*네이버 접속 하기 버튼이 클릭이 되었을때  실제 네이버에 접속 할수 있도록 하는 객체*/
-        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://m.naver.com"));
-        /*Intent 객체를 시작하는 메서드*/
-        startActivity(myIntent);
-    }
-
-    /*전화걸기 버튼을 누르면 전화가 걸릴수 있도록 하는 메서드*/
-    void onButtonPhoneClicked(View v){
-        /*전화걸기 버튼을 누르면 "전화를 겁니다"라는메세지가 뜸*/
-        Toast.makeText(getApplicationContext(),"전화를 겁니다.!!",Toast.LENGTH_LONG).show();
-
-        /*전화 걸기 버튼을 누르면 정말로 전화가 걸릴 수 있도록 하는 객체*/
-        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:010-0000-0001"));
-        /*만들어진 Intent객체를 시작할수 있도록 하는 메서드*/
-        startActivity(myIntent);
+        Toast.makeText(getApplicationContext(), name+"입니다.", Toast.LENGTH_LONG).show();
     }
 
 
-    void onButtoNewClicked(View v){
-        /*전화걸기 버튼을 누르면 "전화를 겁니다"라는메세지가 뜸*/
-        Toast.makeText(getApplicationContext(),"새로운 버튼입니다.",Toast.LENGTH_LONG).show();
-    }
 
 
 
