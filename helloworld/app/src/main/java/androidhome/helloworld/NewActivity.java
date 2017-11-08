@@ -13,6 +13,8 @@ public class NewActivity extends AppCompatActivity {
     /*텍스트를 가져 오는 객체*/
     /*자동으로 EditText를 찾아서 연결해주는 역할을 하는 듯 보임 */
     EditText editText;
+
+    /*나이를 찾아 오는 객체*/
     EditText editText2;
 
 
@@ -39,6 +41,7 @@ public class NewActivity extends AppCompatActivity {
         /*나이를 STring 형으로 변환 해서 이름 뒤에 더해순다. */
         name =name+editText2.getText().toString();
 
+        /*Toast 메세지를 띄어준다. */
         Toast.makeText(getApplicationContext(), name+"입니다.", Toast.LENGTH_LONG).show();
     }
 
