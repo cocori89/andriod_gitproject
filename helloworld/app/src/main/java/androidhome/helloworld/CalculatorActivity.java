@@ -31,7 +31,7 @@ public class CalculatorActivity extends AppCompatActivity {
     }
 
 
-    /*activity_sum.xml에서 버튼을 클릭하게 되면 호출되는 함수 */
+    /*activity_calculator.xml에서 버튼을 클릭하게 되면 호출되는 함수 */
     void onButtonPlusClick(View v) {
         editText1 = findViewById(R.id.editText1);
         int firstNum = Integer.parseInt(editText1.getText().toString());
@@ -44,6 +44,43 @@ public class CalculatorActivity extends AppCompatActivity {
     }
 
 
+
+    /*activity_calculator.xml에서 버튼을 클릭하게 되면 호출되는 함수 */
+    void onButtonSubClick(View v) {
+        editText1 = findViewById(R.id.editText1);
+        int firstNum = Integer.parseInt(editText1.getText().toString());
+        editText2 = findViewById(R.id.editText2);
+        int secondNum = Integer.parseInt(editText2.getText().toString());
+        int result=0;
+        String mark="-";
+        result = firstNum - secondNum;
+        calculatorToast(firstNum,secondNum,result,mark);
+    }
+
+
+    /*나누기 함수*/
+    void onButtonDivClick(View v) {
+        editText1 = findViewById(R.id.editText1);
+        int firstNum = Integer.parseInt(editText1.getText().toString());
+        editText2 = findViewById(R.id.editText2);
+        int secondNum = Integer.parseInt(editText2.getText().toString());
+        int result=0;
+        String mark="/";
+        result = firstNum / secondNum;
+        calculatorToast(firstNum,secondNum,result,mark);
+    }
+
+    /*나누기 함수*/
+    void onButtonMulClick(View v) {
+        editText1 = findViewById(R.id.editText1);
+        int firstNum = Integer.parseInt(editText1.getText().toString());
+        editText2 = findViewById(R.id.editText2);
+        int secondNum = Integer.parseInt(editText2.getText().toString());
+        int result=0;
+        String mark="X";
+        result = firstNum * secondNum;
+        calculatorToast(firstNum,secondNum,result,mark);
+    }
 
 
 
