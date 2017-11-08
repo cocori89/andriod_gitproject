@@ -59,6 +59,11 @@ public class MainActivity extends AppCompatActivity {
     void onButtoNewClicked(View v){
         /*전화걸기 버튼을 누르면 "전화를 겁니다"라는메세지가 뜸*/
         Toast.makeText(getApplicationContext(),"새로운 버튼입니다.",Toast.LENGTH_LONG).show();
+
+        /*새창을 띄우기 하는 객체*/
+        Intent myIntent =  new Intent(getApplicationContext(),NewActivity.class);
+        /*Intent 객체를 사용 하는 메서드*/
+        startActivity(myIntent);
     }
 
 
