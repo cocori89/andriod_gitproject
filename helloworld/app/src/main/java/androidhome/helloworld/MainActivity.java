@@ -66,6 +66,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(myIntent);
     }
 
+    void onButtonAppClicked(){
+        /*화면에 토스트 메시지 보이기 */
+        Toast.makeText(getApplicationContext(),"어플리케이션 설명 화면으로 들어 갑니다. ",Toast.LENGTH_LONG).show();
+
+    }
+
+
 
 
 
