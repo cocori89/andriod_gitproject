@@ -77,6 +77,17 @@ public class MainActivity extends AppCompatActivity {
         startActivity(myIntent);
     }
 
+    void onButtoSumClicked(View v){
+        /*화면에 토스트 메시지 보이기 */
+        Toast.makeText(getApplicationContext(),"직접 입력한 숫자를 더해주는 화면응로 일동합니다.  ",Toast.LENGTH_LONG).show();
+
+        /*SumActivity의 화면을 띄울수 있도록 하는 객체를 만든다.*/
+        /*여기서 클래스 파일을 가여 오는 것은 아마도 실제로 동작하는 것은 .class파일 이기 때문이다. */
+        Intent myIntent = new Intent(getApplicationContext(),SumActivity.class);
+        /*Activity가 (myIntent)값을 갖고 동작(시작) 할수 있도록 하는 것이다. */
+        startActivity(myIntent);
+    }
+
 
 
 
