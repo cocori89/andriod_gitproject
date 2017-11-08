@@ -2,18 +2,18 @@ package androidhome.helloworld;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class ReadmeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         /*activity_main.xml 파일의 코드를 가져와서 java코드로 바꿔두는 역할을 한다. */
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_readme);
     }
 
     /*activity_main.xml에서 버튼을 클릭하게 되면 호출되는 함수 */
@@ -66,15 +66,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(myIntent);
     }
 
-    void onButtonAppClicked(View v){
+    void onButtonAppClicked(){
         /*화면에 토스트 메시지 보이기 */
         Toast.makeText(getApplicationContext(),"어플리케이션 설명 화면으로 들어 갑니다. ",Toast.LENGTH_LONG).show();
 
-        /*ReadmeActivity의 화면을 띄울수 있도록 하는 객체를 만든다.*/
-        /*여기서 클래스 파일을 가여 오는 것은 아마도 실제로 동작하는 것은 .class파일 이기 때문이다. */
-        Intent myIntent = new Intent(getApplicationContext(),ReadmeActivity.class);
-        /*Activity가 (myIntent)값을 갖고 동작(시작) 할수 있도록 하는 것이다. */
-        startActivity(myIntent);
     }
 
 
