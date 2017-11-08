@@ -89,6 +89,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    /*계산기로 이동하는 버튼*/
+    void onButtoncalculatorClicked(View v){
+        /*토스트 메세지 모이게 해주기*/
+        Toast.makeText(getBaseContext(),"계산기를 실행 합니다. ",Toast.LENGTH_LONG).show();
+
+        /*계산기 이동을 위한 Intent 객체를 만든다.*/
+        Intent myIntent = new Intent(getApplicationContext(),CalculatorActivity.class);
+        /*계산기로 이동!!*/
+        startActivity(myIntent);
+    }
+
 
 
 
