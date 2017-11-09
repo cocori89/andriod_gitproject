@@ -99,14 +99,10 @@ public class MainActivity extends AppCompatActivity {
         /*계산기로 이동!!*/
         startActivity(myIntent);
     }
-
-
     /*나인패치이미지 물러오기 */
     void onButtonNineClicked(View v){
         Intent myIntent4 = new Intent(getApplicationContext(),NineActivity.class);
         startActivity(myIntent4);
     }
-
-
 
 }

@@ -1,58 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="androidhome.helloworld.ReadmeActivity">
+    android:orientation="vertical"
+    tools:context="androidhome.helloworld.NineActivity">
+
 
     <Button
+        android:id="@+id/buttonBlue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onButtonClicked"
-        android:text="@string/hello_world"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@drawable/imgbtn_blue_states"
+        android:text="Original" />
 
-
-    <!--naver 접속 버튼을 추가 하기 -->
     <Button
+        android:id="@+id/button5"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onButtonNaverClicked"
-        android:text="네이버 접속하기"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
+        android:layout_height="150dp"
+        android:background="@drawable/imgbtn_blue_states"
+        android:text="Vertical" />
 
-    <!--전화걸기 버튼을 추가 하기 -->
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="onButtonPhoneClicked"
-        android:text="전화 걸기"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        android:background="@drawable/imgbtn_blue_states"
+        android:text="Horizontal" />
 
-    <!--함수 버튼을 추가 하기 -->
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onButtoNewClicked"
-        android:text="새로운 버튼"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
-
-
-
-</android.support.constraint.ConstraintLayout>
+        android:id="@+id/button7"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:background="@drawable/imgbtn_blue_states"
+        android:text="ver Hor" />
+</LinearLayout>
