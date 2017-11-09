@@ -48,12 +48,14 @@
             android:id="@+id/btnjava"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onButtonAniInfo"
             android:text="동물" />
 
         <Button
-            android:id="@+id/button14"
+            android:id="@+id/btnLion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:onClick="onButtonLionInfo"
+            android:text="사자" />
     </LinearLayout>
 </LinearLayout>

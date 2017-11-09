@@ -10,6 +10,5 @@ public class Animal {
     public void eating(){
         //맛있게 무언가를 먹고 있는 중...
 
-
     }
 }
