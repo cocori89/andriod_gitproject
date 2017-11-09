@@ -23,6 +23,7 @@
             android:id="@+id/btnlinear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onButtonExam"
             android:text="리니어 레이아웃" />
 
         <Button
@@ -57,5 +58,7 @@
             android:layout_height="wrap_content"
             android:onClick="onButtonLionInfo"
             android:text="사자" />
+
+
     </LinearLayout>
 </LinearLayout>

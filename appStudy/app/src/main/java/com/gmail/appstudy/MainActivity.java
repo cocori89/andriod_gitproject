@@ -1,5 +1,6 @@
 package com.gmail.appstudy;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -37,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
         lion.likeFood = "멧돼지고기";// 사자가 좋아하는 음식 정하기
         /*사자에 대해 정한 것들을 토스트 메세지에 띄어준다.*/
         Toast.makeText(getApplicationContext(),lion.lionName+"가(이) 좋아하는 음식은 " + lion.likeFood+"입니다. ",Toast.LENGTH_LONG).show();
+    }
+    void onButtonExam(View v){
+
+        Intent myIntent = new Intent(getApplicationContext(),ExamActivity.class);
+        startActivity(myIntent);
+
     }
 
 }
