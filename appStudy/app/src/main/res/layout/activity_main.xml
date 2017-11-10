@@ -38,6 +38,12 @@
             android:layout_height="wrap_content"
             android:onClick="onButtonFrame"
             android:text="프레임 레이아웃" />
+        <Button
+            android:id="@+id/buttonscroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonScroll"
+            android:text="스크롤뷰" />
     </LinearLayout>
 
     <!--우측 레이아웃-->

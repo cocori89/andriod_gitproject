@@ -51,8 +51,18 @@ public class MainActivity extends AppCompatActivity {
         startActivity(tableIntent);
     }
 
-    void onButtonFrame(){
+    /*프레임 레이아웃으로 이동*/
+    void onButtonFrame(View v){
         Intent frameIntent = new Intent(getApplicationContext(),FrameActivity.class);
         startActivity(frameIntent);
     }
+    /*스크롤 뷰*/
+    void onButtonScroll(View v){
+        Intent frameIntent = new Intent(getApplicationContext(),ScrollActivity.class);
+        startActivity(frameIntent);
+    }
+
+
+
+
 }
