@@ -41,17 +41,51 @@ public class MainActivity extends AppCompatActivity {
         sumNumberText="";//초기화 해서 번째 숫자를 받을 준비를 한다.
         sign = "/";
     }
-
-
+    void buttonPlusClick(View v){
+        firstNum=Integer.parseInt(sumNumberText);//첫번째 받은 숫자를 Int형으로 저장
+        sumNumberText="";//초기화 해서 번째 숫자를 받을 준비를 한다.
+        sign = "+";
+    }
+    void buttonSubClick(View v){
+        firstNum=Integer.parseInt(sumNumberText);//첫번째 받은 숫자를 Int형으로 저장
+        sumNumberText="";//초기화 해서 번째 숫자를 받을 준비를 한다.
+        sign = "-";
+    }
+    void buttonMulClick(View v){
+        firstNum=Integer.parseInt(sumNumberText);//첫번째 받은 숫자를 Int형으로 저장
+        sumNumberText="";//초기화 해서 번째 숫자를 받을 준비를 한다.
+        sign = "*";
+    }
 
     /*연산시작*/
     void buttonEqualClick(View v){
         secondNum = Integer.parseInt(sumNumberText);//두번쨰 받은 숫자 Int 형을 저장
         if(sign=="/"){
-           result=  firstNum/secondNum;
-           resultText = String.valueOf(result);
+           resultText = Calculator.div(firstNum,secondNum);
            EditText text = findViewById(R.id.editText);
            text.setText(resultText);
+        }else if(sign=="+"){
+            resultText = Calculator.plus(firstNum,secondNum);
+            EditText text = findViewById(R.id.editText);
+            text.setText(resultText);
+        }else if(sign=="-"){
+            resultText = Calculator.sub(firstNum,secondNum);
+            EditText text = findViewById(R.id.editText);
+            text.setText(resultText);
+        }else if(sign=="*"){
+            resultText = Calculator.mul(firstNum,secondNum);
+            EditText text = findViewById(R.id.editText);
+            text.setText(resultText);
         }
+    }
+
+    /*초기화 reset*/
+    void buttonResetClick(View v){
+        firstNum=0;
+        secondNum=0;
+        sumNumberText="";//초기화 해서 번째 숫자를 받을 준비를 한다.
+        sign = "";
+        EditText text = findViewById(R.id.editText);
+        text.setText("0");
     }
 }
