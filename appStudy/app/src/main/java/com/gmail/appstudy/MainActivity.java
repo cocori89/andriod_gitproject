@@ -39,11 +39,20 @@ public class MainActivity extends AppCompatActivity {
         /*사자에 대해 정한 것들을 토스트 메세지에 띄어준다.*/
         Toast.makeText(getApplicationContext(),lion.lionName+"가(이) 좋아하는 음식은 " + lion.likeFood+"입니다. ",Toast.LENGTH_LONG).show();
     }
+    /*리니어 레이아웃 계산기로 이동*/
     void onButtonExam(View v){
-
         Intent myIntent = new Intent(getApplicationContext(),ExamActivity.class);
         startActivity(myIntent);
-
     }
 
+    /*테이블레이아웃으로이동*/
+    void onButtonTable(View v){
+        Intent tableIntent = new Intent(getApplicationContext(),TableActivity.class);
+        startActivity(tableIntent);
+    }
+
+    void onButtonFrame(){
+        Intent frameIntent = new Intent(getApplicationContext(),FrameActivity.class);
+        startActivity(frameIntent);
+    }
 }

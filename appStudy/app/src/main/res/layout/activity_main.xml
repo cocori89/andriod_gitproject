@@ -27,10 +27,17 @@
             android:text="리니어 레이아웃" />
 
         <Button
-            android:id="@+id/button13"
+            android:id="@+id/buttontable"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:onClick="onButtonTable"
+            android:text="테이블 레이아웃" />
+        <Button
+            android:id="@+id/buttonframe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonFrame"
+            android:text="프레임 레이아웃" />
     </LinearLayout>
 
     <!--우측 레이아웃-->
@@ -58,7 +65,5 @@
             android:layout_height="wrap_content"
             android:onClick="onButtonLionInfo"
             android:text="사자" />
-
-
     </LinearLayout>
 </LinearLayout>
