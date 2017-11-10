@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        android:text="화씨온도를 입력하세요" />
+        android:hint="화씨온도를 입력하세요" />
 
     <Button
         android:layout_width="match_parent"
