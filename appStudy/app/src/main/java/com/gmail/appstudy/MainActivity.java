@@ -62,6 +62,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(frameIntent);
     }
 
+    /*사과 가격 총합 계산기*/
+    void onButtonApple(View v){
+        Intent intent = new Intent(getApplicationContext(),AppleActivity.class);
+        startActivity(intent);
+    }
 
 
 
