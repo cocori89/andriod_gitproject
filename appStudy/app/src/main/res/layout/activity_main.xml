@@ -51,6 +51,13 @@
             android:layout_height="wrap_content"
             android:onClick="onButtonApple"
             android:text="사과가격계산기" />
+
+        <Button
+            android:id="@+id/buttonapple2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onBtnWidget"
+            android:text="기본위젯" />
     </LinearLayout>
 
     <!--우측 레이아웃-->

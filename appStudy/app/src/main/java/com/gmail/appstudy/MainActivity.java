@@ -68,6 +68,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /*기본 위젯*/
+
+    void onBtnWidget(View v){
+        Intent widget = new Intent(getApplicationContext(),WidgetActivity.class);
+        startActivity(widget);
+    }
 
 
 }
