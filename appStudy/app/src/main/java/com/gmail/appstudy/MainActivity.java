@@ -75,5 +75,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(widget);
     }
 
+    void onBtndice(View v){
+        Intent widget = new Intent(getApplicationContext(),DiceActivity.class);
+        startActivity(widget);
+    }
+
 
 }

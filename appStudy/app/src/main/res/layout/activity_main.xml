@@ -58,6 +58,13 @@
             android:layout_height="wrap_content"
             android:onClick="onBtnWidget"
             android:text="기본위젯" />
+
+        <Button
+            android:id="@+id/buttondice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onBtndice"
+            android:text="주사위 앱" />
     </LinearLayout>
 
     <!--우측 레이아웃-->
