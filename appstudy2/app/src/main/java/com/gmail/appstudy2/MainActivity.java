@@ -37,6 +37,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //웹뷰로 이동
+        Button btnWeb = (Button) findViewById(R.id.button4);
+
+        btnWeb.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                Intent chack = new Intent(getApplicationContext(),WebActivity.class);
+                startActivity(chack);
+            }
+        });
+
     }
 
     void onBtnRadio(View v){

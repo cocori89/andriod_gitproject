@@ -48,9 +48,16 @@
 
         </LinearLayout>
 
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="메뉴전체선택" />
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="0"
             android:orientation="horizontal">
 
@@ -67,7 +74,31 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="주문완료" />
+
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="체크박스 change이벤트 해" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="체크박스 변경이벤트(쿠폰사용)" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="할인쿠폰" />
+
+
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
