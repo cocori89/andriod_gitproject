@@ -42,7 +42,7 @@ public class RadioActivity extends AppCompatActivity {
                 textMsg.setText(teamName+"팀의 우승을 축하합니다. ");
             }
         });
-
+//--------------------------- 아래 버튼
         button5.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {

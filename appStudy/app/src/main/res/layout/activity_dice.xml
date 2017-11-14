@@ -12,12 +12,12 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textViewDice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="30dp"
             android:gravity="center"
-            android:text="TextView" />
+            android:text="주사위를 굴려주세요" />
 
         <Button
             android:id="@+id/buttonDice"
