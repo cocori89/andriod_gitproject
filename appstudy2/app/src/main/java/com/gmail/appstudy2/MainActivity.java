@@ -25,12 +25,26 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+
+        //테크 박스 새창 띄우기 버튼 이벤트
+        Button btnChack = (Button) findViewById(R.id.button3);
+
+        btnChack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent chack = new Intent(getApplicationContext(),ChackBoxActivity.class);
+                startActivity(chack);
+            }
+        });
+
     }
 
     void onBtnRadio(View v){
         Intent radio = new Intent(getApplicationContext(),RadioActivity.class);
         startActivity(radio);
     }
+
+
 
 
 }
