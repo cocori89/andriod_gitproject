@@ -49,6 +49,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //OX빙고게임으로 이동
+        Button btnBingo = (Button) findViewById(R.id.button6);
+
+        btnBingo.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                Intent chack = new Intent(getApplicationContext(),OXBingoGameActivity.class);
+                startActivity(chack);
+            }
+        });
+
     }
 
     void onBtnRadio(View v){
