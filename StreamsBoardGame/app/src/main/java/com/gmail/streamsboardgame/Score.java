@@ -2,9 +2,7 @@ package com.gmail.streamsboardgame;
 
 import java.util.ArrayList;
 
-/**
- * Created by USER on 2017-11-15.
- */
+
 //점수를 판단하는 계산기
 public class Score {
     ArrayList<Integer> normalScoreList;

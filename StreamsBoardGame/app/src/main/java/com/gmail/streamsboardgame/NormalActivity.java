@@ -1,5 +1,6 @@
 package com.gmail.streamsboardgame;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -20,6 +21,9 @@ public class NormalActivity extends AppCompatActivity {
             textView16,textView17,textView18,textView19;
     ArrayList<TextView> textViewArrayList;//뷰 변수들이 들어갈 변수
 
+    /*공사중 텍스트 뷰 변수 배열*/
+    TextView[] textViews;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +36,13 @@ public class NormalActivity extends AppCompatActivity {
         numTile=new int[40];
         numTile = numberTile.getNumberTile();// 섞은 타일 얻기
 
+
         /*시작 하자 마자 뷰 들을 리스트에 넣어주기 */
+        textViews = new TextView[20];
+        for(int i = 0 ; i<20 ; i++){
+            
+
+        }
         textView0=findViewById(R.id.textView0);
         textView1=findViewById(R.id.textView1);
         textView2=findViewById(R.id.textView2);
@@ -76,6 +86,12 @@ public class NormalActivity extends AppCompatActivity {
         textViewArrayList.add(textView17);
         textViewArrayList.add(textView18);
         textViewArrayList.add(textView19);
+
+        /*시트 아이디값 얻기*/
+        int getId = getResources().getIdentifier("button"+2,"id","com.gmail.streamsboardgame");
+        String coco =String.valueOf(getId);
+        Toast.makeText(getApplicationContext(),""+coco,Toast.LENGTH_SHORT).show();
+
     }
 
     //버튼 누르면 타일 숫자 출력
