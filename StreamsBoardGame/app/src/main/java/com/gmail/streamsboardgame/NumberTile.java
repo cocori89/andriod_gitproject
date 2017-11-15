@@ -8,8 +8,10 @@ import java.util.Random;
 /*넘버 타일 변수*/
 public class NumberTile {
     /*원래들어가 숫자 타일*/
-    final int[] ORIGINAL = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
-            11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30};
+    final int[] ORIGINAL = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+            11, 12, 13, 14, 15, 16, 17, 18, 19,
+            11, 12, 13, 14, 15, 16, 17, 18, 19,
+            20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,99};// 여기서 99는 조커
 
     /*실제 게임에 이용될 숫자 타일*/
     int[] numberTile = new int[40];
@@ -32,11 +34,9 @@ public class NumberTile {
         }
     }
 
+    /*섞은 값을 가져 온다. */
     public int[] getNumberTile() {
         return numberTile;
     }
 
-    public void setNumberTile(int[] numberTile) {
-        this.numberTile = numberTile;
-    }
 }

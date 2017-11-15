@@ -12,34 +12,229 @@
         android:orientation="horizontal">
 
         <TableLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="2"
+            android:stretchColumns="7">
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button21"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+
+                <Button
+                    android:id="@+id/button27"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+
+                <Button
+                    android:id="@+id/button26"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+
+                <Button
+                    android:id="@+id/button25"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+
+                <Button
+                    android:id="@+id/button24"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+
+                <Button
+                    android:id="@+id/button23"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+
+
+            </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+                <Button
+                    android:id="@+id/button46"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:text="숨김 버튼"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/button28"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+            </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button34"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="setNumSeat"
+                    android:layout_weight="1"
+                    android:text="빈칸" />
+
+                <Button
+                    android:id="@+id/button33"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+
+                <Button
+                    android:id="@+id/button32"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+
+                <Button
+                    android:id="@+id/button31"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+
+                <Button
+                    android:id="@+id/button30"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+
+                <Button
+                    android:id="@+id/button29"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+            </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button35"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="setNumSeat"
+
+                    android:layout_weight="1"
+                    android:text="빈칸" />
+
+                <Button
+                    android:id="@+id/button45"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:text="숨김 버튼"
+                    android:onClick="setNumSeat"
+                    android:visibility="invisible" />
+
+            </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button41"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+
+                <Button
+                    android:id="@+id/button40"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+
+                <Button
+                    android:id="@+id/button39"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+
+                <Button
+                    android:id="@+id/button38"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+
+                <Button
+                    android:id="@+id/button37"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+
+                <Button
+                    android:id="@+id/button56"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="setNumSeat"
+                    android:text="빈칸" />
+
+            </TableRow>
         </TableLayout>
 
         <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1">
 
             <TableRow
@@ -53,14 +248,14 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:onClick="setNumberTile"
-                    android:text="Button" />
+                    android:text="타일 뽑기" />
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView0"
@@ -111,10 +306,10 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1" >
+                android:layout_weight="1">
 
                 <TextView
-                    android:id="@+id/textView87"
+                    android:id="@+id/textView5"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -123,7 +318,7 @@
                     android:text="go!!" />
 
                 <TextView
-                    android:id="@+id/textView88"
+                    android:id="@+id/textView6"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -132,7 +327,7 @@
                     android:text="go!!" />
 
                 <TextView
-                    android:id="@+id/textView89"
+                    android:id="@+id/textView7"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -141,7 +336,7 @@
                     android:text="go!!" />
 
                 <TextView
-                    android:id="@+id/textView90"
+                    android:id="@+id/textView8"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -150,58 +345,7 @@
                     android:text="go!!" />
 
                 <TextView
-                    android:id="@+id/textView91"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@drawable/border_style"
-                    android:gravity="center"
-                    android:text="go!!" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1" >
-
-                <TextView
-                    android:id="@+id/textView82"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@drawable/border_style"
-                    android:gravity="center"
-                    android:text="go!!" />
-
-                <TextView
-                    android:id="@+id/textView83"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@drawable/border_style"
-                    android:gravity="center"
-                    android:text="go!!" />
-
-                <TextView
-                    android:id="@+id/textView84"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@drawable/border_style"
-                    android:gravity="center"
-                    android:text="go!!" />
-
-                <TextView
-                    android:id="@+id/textView85"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@drawable/border_style"
-                    android:gravity="center"
-                    android:text="go!!" />
-
-                <TextView
-                    android:id="@+id/textView86"
+                    android:id="@+id/textView9"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -213,10 +357,10 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1" >
+                android:layout_weight="1">
 
                 <TextView
-                    android:id="@+id/textView77"
+                    android:id="@+id/textView10"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -225,7 +369,7 @@
                     android:text="go!!" />
 
                 <TextView
-                    android:id="@+id/textView78"
+                    android:id="@+id/textView11"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -234,7 +378,7 @@
                     android:text="go!!" />
 
                 <TextView
-                    android:id="@+id/textView79"
+                    android:id="@+id/textView12"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -243,7 +387,7 @@
                     android:text="go!!" />
 
                 <TextView
-                    android:id="@+id/textView80"
+                    android:id="@+id/textView13"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -252,7 +396,58 @@
                     android:text="go!!" />
 
                 <TextView
-                    android:id="@+id/textView81"
+                    android:id="@+id/textView14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_style"
+                    android:gravity="center"
+                    android:text="go!!" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_style"
+                    android:gravity="center"
+                    android:text="go!!" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_style"
+                    android:gravity="center"
+                    android:text="go!!" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_style"
+                    android:gravity="center"
+                    android:text="go!!" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_style"
+                    android:gravity="center"
+                    android:text="go!!" />
+
+                <TextView
+                    android:id="@+id/textView19"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
