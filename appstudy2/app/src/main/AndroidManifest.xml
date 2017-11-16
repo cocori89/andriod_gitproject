@@ -4,6 +4,7 @@
 
     <!--웹뷰사용시 인터넷을 사용 할수 있도록 해주는 것-->
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
 
     <application
         android:allowBackup="true"
@@ -41,6 +42,20 @@
             </intent-filter>
         </activity>
         <activity android:name=".OXBingoGameActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SeekbarActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //웹뷰로 이동
-        Button btnWeb = (Button) findViewById(R.id.button4);
+        Button btnWeb = (Button) findViewById(R.id.button6);
 
         btnWeb.setOnClickListener(new View.OnClickListener(){
 
@@ -61,12 +61,32 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //seekbar
+        Button seekbar = (Button) findViewById(R.id.button9);
+        seekbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent seek = new Intent(getApplicationContext(),SeekbarActivity.class);
+                startActivity(seek);
+            }
+        });
+
+        //seekbar
+        Button pro = (Button) findViewById(R.id.button10);
+        pro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent pro = new Intent(getApplicationContext(),ProActivity.class);
+                startActivity(pro);
+            }
+        });
     }
 
     void onBtnRadio(View v){
         Intent radio = new Intent(getApplicationContext(),RadioActivity.class);
         startActivity(radio);
     }
+
 
 
 
