@@ -468,6 +468,21 @@
                     android:layout_weight="1"
                     android:onClick="finalScore"
                     android:text="점수확인 하기" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="gameReset"
+                    android:text="게임다시하기" />
             </TableRow>
         </TableLayout>
 

@@ -56,6 +56,7 @@ public class NormalActivity extends AppCompatActivity {
         for (int i = 0; i < 20; i++) {
             buttons[i] = (Button) findViewById(getResources().getIdentifier("button" + i, "id", "com.gmail.streamsboardgame"));
             buttonIntegerHashMap.put(buttons[i], i);
+            resultNumber[i] = 0;// 점수 초기화
         }
 
     }//onCreat() end-----------------------------------------------------
@@ -96,6 +97,9 @@ public class NormalActivity extends AppCompatActivity {
         if (tempButton.getText().toString().equals("빈칸")) {
             tempButton.setText(numberString);//시트에 숫자자가 들어감
             //그거와 함께 점수를 반별한 배열에 들어가야한다.
+            if(numberString.equals("조커☆")){
+                numberString = "99";
+            }
             Integer indexNum = buttonIntegerHashMap.get(tempButton);// 배열의 index값을 뽑아낸다
             resultNumber[indexNum] = Integer.parseInt(numberString);
 
@@ -109,6 +113,29 @@ public class NormalActivity extends AppCompatActivity {
     void finalScore(View v) {
         Score score = new Score();
         int finalScoreText = score.getNormalScore(resultNumber);
-        Toast.makeText(getApplicationContext(),""+finalScoreText,Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"점수는"+finalScoreText,Toast.LENGTH_LONG).show();
     }
+
+    void gameReset(View v){
+        tileIntex = 0;// 출력할 인뎃스 값
+        numberString = "";// 클릭하면 할때 마다 담을 변수
+        ArrayList<TextView> textViewArrayList;//뷰 변수들이 들어갈 변수
+    /*시트의 정보 변수들*/
+
+        /*게임이 시작되면서 타일 세팅과 게임 초기화*/
+        NumberTile numberTile = new NumberTile();// 타일 섞을 개체 만들기
+        numberTile.mixTile();//타일 섞기
+        numTile = numberTile.getNumberTile();// 섞은 타일 얻기
+
+        for (int i = 0; i < 20; i++) {
+            textViews[i].setText("go!!");
+            buttons[i].setText("빈칸");
+            resultNumber[i] = 0;// 점수 초기화
+        }
+        Toast.makeText(getApplicationContext(),"새로운 게임을 시작합니다. ",Toast.LENGTH_LONG).show();
+    }
+
+
+
+
 }

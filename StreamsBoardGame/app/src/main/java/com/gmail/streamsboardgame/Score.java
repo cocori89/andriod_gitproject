@@ -40,15 +40,18 @@ public class Score {
     /*일반 모드 점수 결과*/
     int getNormalScore(Integer[] resultNumber) {
         Integer resultScore = 0;//점수 결과
-        int SNum=0;
+        int SNum=1;
         for(int i = 1 ;  i<resultNumber.length;i++){
-            if(resultNumber[i-1]<resultNumber[i]){
+            if(resultNumber[i-1]==99||resultNumber[i]==99){// 조커가 있는 경우
+                SNum++;
+            }else if(resultNumber[i-1]<=resultNumber[i]){// 오름 차순인지 혹은 연달아 같은 경우 인지
                 SNum++;
             }else {
                 resultScore =resultScore+ normalScoreMap.get(SNum);
-                SNum=0;
+                SNum=1;
             }
         }
+        resultScore =resultScore+ normalScoreMap.get(SNum);// 마지막까지 오름 차순일 경우 다 더해주기
         return resultScore;
     }
 
