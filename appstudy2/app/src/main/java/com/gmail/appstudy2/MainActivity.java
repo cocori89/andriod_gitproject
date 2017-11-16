@@ -80,9 +80,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(pro);
             }
         });
+
+        Button alertButton =  findViewById(R.id.button12);
+
+        alertButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent alert = new Intent(getApplicationContext(),AlertActivity.class);
+                startActivity(alert);
+            }
+        });
+
     }
 
-    void onBtnRadio(View v){
+    public void onBtnRadio(View v){
         Intent radio = new Intent(getApplicationContext(),RadioActivity.class);
         startActivity(radio);
     }
