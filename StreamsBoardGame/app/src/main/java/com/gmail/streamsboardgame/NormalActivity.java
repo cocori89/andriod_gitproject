@@ -62,7 +62,7 @@ public class NormalActivity extends AppCompatActivity {
     }//onCreat() end-----------------------------------------------------
 
     //버튼 누르면 타일 숫자 출력
-    public void setNumberTile(View v) {
+    void setNumberTile(View v) {
 
         //20번 뽑으면 끝
         if (tileIntex >= 20) {
@@ -86,7 +86,7 @@ public class NormalActivity extends AppCompatActivity {
     }//setNumberTile() end------------------------------------------------
 
     /*시트 버튼을 누르면 들어갈수 있도록 하기 */
-    public void setNumSeat(View v) {
+    void setNumSeat(View v) {
         Button tempButton = (Button) findViewById(v.getId());
         /*시트에 연속으로 들어 갈수 없게 하기*/
         if (numberString.equals("")) {
@@ -110,13 +110,13 @@ public class NormalActivity extends AppCompatActivity {
         numberString = "";
     }//setNumSeat() end -------------------------------------------------------
 
-    public void finalScore(View v) {
+    void finalScore(View v) {
         Score score = new Score();
         int finalScoreText = score.getNormalScore(resultNumber);
         Toast.makeText(getApplicationContext(),"점수는"+finalScoreText,Toast.LENGTH_LONG).show();
     }
 
-    public void gameReset(View v){
+    void gameReset(View v){
         tileIntex = 0;// 출력할 인뎃스 값
         numberString = "";// 클릭하면 할때 마다 담을 변수
         ArrayList<TextView> textViewArrayList;//뷰 변수들이 들어갈 변수
