@@ -7,6 +7,7 @@
     tools:context="com.gmail.appstudy3.MainActivity2">
 
     <LinearLayout
+        android:id="@+id/contnentsLayourt"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -17,6 +18,13 @@
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:text="메인창 2"
+            />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입 조건"
             />
 
 
