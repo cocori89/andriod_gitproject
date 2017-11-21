@@ -25,4 +25,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(atamam);
 
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        bgm.release();
+    }
 }

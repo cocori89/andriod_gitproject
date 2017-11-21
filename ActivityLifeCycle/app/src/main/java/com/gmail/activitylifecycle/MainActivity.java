@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         Log.i("my","onDestroy  - 온 디스토리");
     }
 
+
     @Override
     protected void onRestart() {
         super.onRestart();
