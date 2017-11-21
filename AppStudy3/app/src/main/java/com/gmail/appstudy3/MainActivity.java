@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     //String LIST_MENU ="리스트";
-    final String[]  LIST_MENU = {"리스트1", "리스트2","리스트3"};// 0,1,2, 순으로
+    final String[]  LIST_MENU = {"리스트1", "리스트2","리스트3","리스트4"};// 0,1,2, 순으로
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
                         android.os.Process.killProcess(android.os.Process.myPid());
 //                        System.exit(0);
                         break;
+                    case 3:
+                        Intent main3 = new Intent(getApplicationContext(),MainActivity3.class);
+                        startActivity(main3);
 
                 }
 
