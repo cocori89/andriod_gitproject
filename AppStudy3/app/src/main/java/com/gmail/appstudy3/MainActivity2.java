@@ -5,12 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.Toast;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -31,19 +27,10 @@ public class MainActivity2 extends AppCompatActivity {
                 // 인플레이트: xml 정보를 가져 와서 화면에 그린다.
                 LayoutInflater myInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 //Application Context(앱, 기능  관련), context (뷰관련, 화면 돌려주는 것)이라고 보면 될 듯
-
                 // 실제화면의 글림
                 myInflater.inflate(R.layout.layout_sub,contents,true);//이제 레이아웃을 가져와서 붙여주는 함수 이지만 어디에 그릴지 정하는 함수 이다.
                 //(가져올 xml, 그릴content(화면에 어디에그릴지) , true면 그려진다. )
-
-
-
             }
         });
-
-
     }
-
-
-
 }
