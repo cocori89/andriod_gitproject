@@ -4,19 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.gmail.cocotoy.MainActivity">
+    tools:context="com.gmail.cocotoy.AtamammaActivity">
 
     <LinearLayout
-        android:id="@+id/linerLayout1"
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <Button
-            android:id="@+id/atmammabutton"
+
+
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/app_atamamma"
-            android:onClick="atamamma"
+            app:srcCompat="@drawable/mom" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_dance" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_back"
+            android:onClick="onClickBack"
             />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

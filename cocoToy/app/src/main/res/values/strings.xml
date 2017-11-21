@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">cocoToy</string>
+    <string name="app_atamamma">아따 맘마 </string>
+    <string name="app_dance">춤춰!</string>
+    <string name="app_back">뒤로가기</string>
 </resources>
